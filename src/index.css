@@ -1,0 +1,90 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background-color: #0B2434;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div#root {
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    max-width: 400px;
+}
+
+main {
+    background-color: #F5F5F5;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+.dice-container{
+  display: grid;
+  grid-template-columns: repeat(5,auto);
+  gap: 20px;
+}
+button{
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  font-family: Inter, sans-serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+:root{
+    --btn-bg: #5b2bff;      
+    --btn-bg-2: #5f34ff;    
+    --btn-radius: 12px;
+    --btn-padding: 14px 36px;
+    --btn-shadow: 0 10px 20px rgba(91,43,255,0.18);
+    --btn-shadow-hover: 0 18px 30px rgba(91,43,255,0.22);
+    --btn-text: #fff;
+  }
+  .roll-dice{
+    white-space: nowrap;
+    width: auto;
+    display: inline-block;
+    padding: var(--btn-padding);
+    background: linear-gradient(180deg, var(--btn-bg) 0%, var(--btn-bg-2) 100%);
+    color: var(--btn-text);
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    border-radius: var(--btn-radius);
+    box-shadow: var(--btn-shadow);
+    cursor: pointer;
+    transition: transform 160ms ease, box-shadow 160ms ease;
+    user-select: none;
+    outline: none;
+    position: relative;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.12);
+  }
+  .roll-dice:hover{
+    transform: translateY(-4px);
+    box-shadow: var(--btn-shadow-hover);
+  }
+  .roll-dice:active{
+    transform: translateY(-1px) scale(0.995);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+  }
+  .roll-dice:focus{
+    box-shadow:
+      0 10px 20px rgba(91,43,255,0.16),
+      0 0 0 6px rgba(91,43,255,0.10);
+  }
