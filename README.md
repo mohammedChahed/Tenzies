@@ -4,7 +4,7 @@ Tenzies is a simple and fun dice game where the goal is to roll until all dice s
 
 🎮 Live Demo
 
-Check out the live game here: [Play Tenzies]([https://tenzies-projectqsimo.netlify.app/])
+Check out the live game here: [Play Tenzies](https://tenzies-projectqsimo.netlify.app/)
 
 🕹 How to Play
 
